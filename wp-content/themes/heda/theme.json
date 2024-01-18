@@ -105,6 +105,12 @@
                 "vw",
                 "%"
             ]
+        },
+        "border": {
+            "radius": true,
+            "color": true,
+            "style": true,
+            "width": true
         }
     },
     "styles": {
