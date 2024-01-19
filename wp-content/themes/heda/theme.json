@@ -11,7 +11,7 @@
                 {
                     "slug": "heda-black",
                     "color": "#2b2a33",
-                    "name": "Black"
+                    "name": "Dark"
                 },
                 {
                     "slug": "heda-white",
@@ -114,6 +114,10 @@
         }
     },
     "styles": {
+        "color": {
+            "background": "var(--wp--preset--color--heda-black)",
+            "text": "var(--wp--preset--color--heda-white)"
+        },
         "typography": {
             "fontFamily": "var(--wp--preset--font-family--inter)",
             "lineHeight": "1.75",
