@@ -47,7 +47,7 @@ if (!function_exists('heda_styles')) :
     {
         // Enqueue theme stylesheet.
         wp_enqueue_style('heda-style', get_stylesheet_uri(), array(), wp_get_theme()->get('Version'));
-        wp_enqueue_style('heda-style-blocks', get_template_directory_uri() . '/assets/css/blocks.css');
+        wp_enqueue_style('heda-style-blocks', get_stylesheet_directory_uri() . '/assets/css/blocks.css');
     }
 endif;
 add_action('wp_enqueue_scripts', 'heda_styles');
