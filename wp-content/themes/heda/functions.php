@@ -63,10 +63,10 @@ function astra_footer_align_bottom()
         }, false);
 
         function fullHeight() {
-            var headerHeight = document.querySelector("header").clientHeight;
-            var footerHeight = document.querySelector("footer").clientHeight;
-            var headerFooter = headerHeight + footerHeight;
-            var content = document.querySelector(".wp-block-post-content");
+            let headerHeight = document.querySelector("header").clientHeight;
+            let footerHeight = document.querySelector("footer").clientHeight;
+            let headerFooter = headerHeight + footerHeight;
+            let content = document.querySelector(".wp-block-post-content");
             content.style.minHeight = "calc( 95vh - " + headerFooter + "px )";
         }
     </script>
