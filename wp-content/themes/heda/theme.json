@@ -111,6 +111,9 @@
             "color": true,
             "style": true,
             "width": true
+        },
+        "dimensions": {
+            "minHeight": true
         }
     },
     "styles": {

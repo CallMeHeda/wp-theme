@@ -51,3 +51,24 @@ if (!function_exists('heda_styles')) :
     }
 endif;
 add_action('wp_enqueue_scripts', 'heda_styles');
+
+//FOOTER
+add_action('wp_footer', 'astra_footer_align_bottom');
+
+function astra_footer_align_bottom()
+{ ?>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            fullHeight();
+        }, false);
+
+        function fullHeight() {
+            var headerHeight = document.querySelector("header").clientHeight;
+            var footerHeight = document.querySelector("footer").clientHeight;
+            var headerFooter = headerHeight + footerHeight;
+            var content = document.querySelector(".wp-block-post-content");
+            content.style.minHeight = "calc( 95vh - " + headerFooter + "px )";
+        }
+    </script>
+<?php
+}
